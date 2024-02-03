@@ -1,3 +1,4 @@
+const { addExpense } = require('../controllers/expense.js')
 const { addIncome, getIncomes, deleteIncome } = require('../controllers/income.js')
 
 const router = require('express').Router()
@@ -6,6 +7,7 @@ router.post('/add-income', addIncome)
 router.get('/get-incomes', getIncomes)
     .delete('/delete-income/:id', deleteIncome)
     
+    .post('/add-expense', addExpense)
 // router.get('/', (req, res) => {
 //     res.send('Hello world')
 // })
