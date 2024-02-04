@@ -9,7 +9,7 @@ router.get('/get-incomes', getIncomes)
     
     .post('/add-expense', addExpense)
     .get('/get-expenses', getExpense)
-    .delete('/delete-expense', deleteExpense)
+    .delete('/delete-expense/:id', deleteExpense)
 
 
 
